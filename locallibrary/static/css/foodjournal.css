@@ -1,0 +1,69 @@
+/* Ensure all text in the food journal section is black */
+#initialContent,
+#context1,
+#context2,
+#context3 {
+    color: black; /* Set text color to black */
+}
+
+/* Specific elements within the sections */
+#initialContent h2,
+#context1 h2,
+#context2 h2,
+#context3 h2,
+#initialContent p,
+#context1 label,
+#context2 .search-bar,
+#context3 table,
+#context3 table th,
+#context3 table td {
+    color: black; /* Set text color to black for these elements */
+}
+
+/* Input and button elements */
+#context1 input,
+#context2 input,
+#context2 button,
+#context3 button {
+    color: black; /* Set text color to black for input and button elements */
+    border-color: black; /* Optional: Set border color to black */
+}
+
+/* Styling for better appearance */
+#context3 table {
+    border-collapse: collapse; /* Optional: Better table appearance */
+}
+
+#context3 table th, #context3 table td {
+    padding: 8px; /* Optional: Padding for table cells */
+    border: 1px solid black; /* Optional: Border for table cells */
+}
+
+#context2 .search-bar {
+    display: flex; /* Align search input and button */
+    max-width: 500px; /* Set a maximum width for the search bar */
+    margin: 0 auto; /* Center the search bar */
+}
+
+#context2 .search-bar .search-input {
+    flex: 1; /* Allow input to grow within the max-width */
+    margin-right: 8px; /* Space between input and button */
+}
+
+.new-navbar {
+    background-color: orange; /* Set background color to orange */
+    padding: 10px 0; /* Optional: Padding for better spacing */
+    position: relative; /* Ensure positioning relative to parent */
+
+
+  }
+  
+  .new-navbar .nav-link {
+    color: white; /* Set text color to white for contrast */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px; /* Optional: Spacing between links */
+  }
+  
+  .new-navbar .nav-link:hover {
+    color: #f0f0f0; /* Optional: Change color on hover for better UX */
+  }

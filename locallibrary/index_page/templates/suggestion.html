@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <!-- <title>Responsive Navbar with Searchbox</title> -->
+    <link rel="stylesheet" href="/static/css/index_styles.css?{% now 'U' %}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/static/css/suggestion_styles.css?{% now 'U' %}"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/static/js/suggestion.js?{% now 'U' %}"></script>
+</head>
+<body>
+<nav style="background-color: #8ec6ff;"> <!-- Lighter blue background -->
+    <ul>
+        <li class="logo"><a href="{% url 'logged_in' %}"><img src="{% static 'images/dllogo2.png' %}"></a></li>
+        <li class="btn"><span class="fas fa-bars"></span></li>
+        <div class="items">
+            <li><a href="{% url 'suggestion' %}">食譜推薦</a></li>
+            <li><a href="{% url 'buy_recipe' %}">食材購買</a></li>
+            <li><a href="{% url 'food_journal' %}">飲食日記</a></li>
+            <li class="dropdown">
+                <a href="#">更多選項 <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">訂單查詢</a>
+                    <a href="#">賣菜車</a>
+                </div>
+            </li>
+        </div>
+        <li><a href="{% url 'login' %}" class="login-btn">登入</a></li> <!-- Login Button -->
+        <li class="search-icon">
+            <input type="search" placeholder="搜尋">
+            <label class="icon">
+                <span class="fas fa-search"></span>
+            </label>
+        </li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>食譜瀏覽</h1>
+    <div class="search-box">
+        <input type="search" placeholder="搜尋食譜">
+        <button>搜尋</button>
+    </div>
+    <div class="tags">
+        <div class="tag">中式</div>
+        <div class="tag">西式</div>
+        <div class="tag">韓式</div>
+        <div class="tag">高蛋白</div>
+        <div class="tag">微辣</div>
+        <div class="tag">
+            <input type="text" id="otherTagInput" placeholder="其他">
+            <i class="fas fa-plus" id="addTag"></i>
+        </div>
+    </div>
+</div>
+
+<div class="second-hero">
+    <h1>智慧食譜推薦</h1>
+    <p>根據註冊時的個人化表單，搭配其他元素，例如：天氣、節慶、物價、賣菜車、過去訂單...等。</p>
+    <button>開始推薦</button>
+</div>
+
+<script>
+    $('nav ul li.btn span').click(function(){
+        $('nav ul div.items').toggleClass("show");
+        $('nav ul li.btn span').toggleClass("show");
+    });
+
+    $(document).ready(function() {
+    // Hide the dropdown content initially
+    $('.dropdown-content').hide();
+    
+    // Toggle the dropdown content when the dropdown is clicked
+    $('.dropdown').click(function(){
+        $(this).find('.dropdown-content').toggle();
+    });
+});
+</script>
+</body>
+</html>

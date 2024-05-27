@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-logo-left {
+    /* Your existing styles for navigation bar */
+}
+
+.content-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto; /* Center the content container and provide margin */
+    padding: 0 20px; /* Add padding to the content container */
+}
+
+.calendar-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust margin top for spacing */
+}
+
+.calendar {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.calendar th,
+.calendar td,
+.calendar th:first-child,
+.calendar td:first-child {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.survey {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}

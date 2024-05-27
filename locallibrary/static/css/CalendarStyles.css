@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black; /* Set text color to black for the entire document */
+}
+
+.navbar-logo-left {
+    /* Your existing styles for navigation bar */
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto; /* Center the content container and provide margin */
+    padding: 0 20px; /* Add padding to the content container */
+    color: black; /* Set text color to black */
+}
+
+
+.calendar-container {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    flex-direction: column; /* Align items vertically */
+    text-align: center; /* Center text within the container */
+    margin-top: 20px;
+    margin-left: 40px; /* Add left margin */
+    margin-right: 40px; /* Add right margin */
+}
+
+
+.calendar {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.calendar th,
+.calendar td,
+.calendar th:first-child,
+.calendar td:first-child {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: black; /* Set text color to black */
+}
+
+.survey {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+    margin-bottom: 20px;
+    color: black; /* Set text color to black */
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black; /* Set text color to black */
+}
+
+.hidden {
+    display: none;
+}
+
+/* buy straight away */
+#purchase-survey {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+    margin-bottom: 20px;
+    color: black; /* Set text color to black */
+}
+
+#purchase-survey h2 {
+    margin-top: 0;
+}
+
+#purchase-survey label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#purchase-survey select,
+#purchase-survey input[type="date"],
+#purchase-survey input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+}
+
+#purchase-survey select option,
+
+#purchase-survey input[type="date"]::placeholder {
+    color: black ; /* Set placeholder color to black */
+}
+
+#purchase-survey button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+#purchase-survey button:hover {
+    background-color: #2980b9;
+}
+
+
+
+#purchase-survey input[type="date"]::-webkit-datetime-edit-fields-wrapper::after {
+    color: black; /* Set placeholder color to black */
+}
+
+
+/* Adjusted styling for recommended dishes */
+.recommended-dishes {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: black; /* Set text color to black */
+    width: 50%;
+}
+
+.recommended-dishes h2,
+.recommended-dishes th,
+.recommended-dishes td {
+    color: black; /* Set text color to black */
+}
+
+
+
+.recommended-dishes table {
+    border-collapse: collapse; /* Collapse borders to avoid double borders */
+    width: 100%; /* Ensure the table takes up the full width */
+}
+
+.recommended-dishes th,
+.recommended-dishes td {
+    border: 1px solid #ccc; /* Add borders to each cell */
+    padding: 8px; /* Add padding to the cells for spacing */
+}
+
+/* 搜索框的 CSS 代碼 */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust width as needed */
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-family: 'Roboto', sans-serif; /* 使用 Roboto 字體 */
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* 使用 Roboto 字體 */
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+/* survey */
+.survey h2,
+.survey label,
+.survey select,
+.survey button,
+#popup-content div, /* Targeting text inside div elements */
+#popup-content button { /* Targeting text inside button elements */
+    color: black; /* Set text color to black */
+}

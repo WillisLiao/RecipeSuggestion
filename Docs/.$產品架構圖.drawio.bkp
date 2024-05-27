@@ -1,0 +1,280 @@
+<mxfile host="Electron" modified="2024-03-31T23:02:15.693Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="q_Q48BmhyLZFieRt5zNF" version="24.1.0" type="device">
+  <diagram name="Page-1" id="2c0d36ab-eaac-3732-788b-9136903baeff">
+    <mxGraphModel dx="3191" dy="1854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="123" value="" style="fillColor=#AE4132;strokeColor=none;opacity=30;" parent="1" vertex="1">
+          <mxGeometry x="867" y="175.50000000000003" width="210" height="99.99999999999994" as="geometry" />
+        </mxCell>
+        <mxCell id="122" value="" style="fillColor=#10739E;strokeColor=none;opacity=30;" parent="1" vertex="1">
+          <mxGeometry x="230" y="325.5" width="1420" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="飲食健康系統" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="877" y="185.5" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Line推廣系統" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="1129.9999999999998" y="335.5" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;strokeWidth=2;rounded=0" parent="1" source="2" target="4" edge="1">
+          <mxGeometry x="337" y="215.5" width="100" height="100" as="geometry">
+            <mxPoint x="337" y="315.5" as="sourcePoint" />
+            <mxPoint x="437" y="215.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="使用者資訊管理系統" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="877" y="335.5" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="12" value="基礎系統" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="561.9999999999999" y="335.5" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="13" value="購物系統" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="260" y="335" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="16" value="食譜推薦系統" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="390" y="455" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="17" value="選擇性配餐&#xa;(菜單調配)" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="390" y="545" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="52" value="廣告發送" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="1238" y="440.00000000000006" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="53" value="營養分析回報" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="1238" y="530" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="54" value="訂單訊息回報" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="1238" y="620" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="55" value="健康營養知識教育" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="1238" y="710.0000000000001" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="56" value="食品保存教育" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" parent="1" vertex="1">
+          <mxGeometry x="1238" y="800.0000000000001" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="59" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;strokeWidth=2;rounded=0" parent="1" source="2" target="12" edge="1">
+          <mxGeometry x="347" y="225.5" width="100" height="100" as="geometry">
+            <mxPoint x="861.9999999999999" y="275.5" as="sourcePoint" />
+            <mxPoint x="1466.9999999999998" y="345.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;strokeWidth=2;rounded=0" parent="1" source="2" target="13" edge="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="-23" y="235.5" as="sourcePoint" />
+            <mxPoint x="77" y="135.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="64" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" parent="1" source="13" target="16" edge="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="130" y="235" as="sourcePoint" />
+            <mxPoint x="230" y="135" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="355" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="65" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" parent="1" source="13" target="17" edge="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="130" y="235" as="sourcePoint" />
+            <mxPoint x="230" y="135" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="355" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="90" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" parent="1" source="52" target="53" edge="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="-352" y="220" as="sourcePoint" />
+            <mxPoint x="-252" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1218" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="91" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" parent="1" source="52" target="54" edge="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="-352" y="220" as="sourcePoint" />
+            <mxPoint x="-252" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1218" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="92" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" parent="1" source="52" target="55" edge="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="-352" y="220" as="sourcePoint" />
+            <mxPoint x="-252" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1218" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="93" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" parent="1" source="52" target="56" edge="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="-352" y="220" as="sourcePoint" />
+            <mxPoint x="-252" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1218" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-123" value="登入" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="690" y="455.5" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-124" value="登出" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="690" y="545.5" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-125" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="660" y="415.5" as="sourcePoint" />
+            <mxPoint x="695" y="485.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-126" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="660" y="415.5" as="sourcePoint" />
+            <mxPoint x="695" y="575.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-127" value="帳號管理" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="690" y="630" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-128" value="版本更新" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="690" y="725.5" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-130" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="660" y="495.5" as="sourcePoint" />
+            <mxPoint x="695" y="655.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-131" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="660" y="600" as="sourcePoint" />
+            <mxPoint x="695" y="760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="659.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-132" value="帳號密碼" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="970" y="455" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-133" value="最新消息" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="970" y="545" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-134" value="社群連結" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="970" y="629.5" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-135" value="個人檔案" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="970" y="725" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-136" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="940" y="495" as="sourcePoint" />
+            <mxPoint x="975" y="655" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="940" y="554.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-137" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="940" y="599.5" as="sourcePoint" />
+            <mxPoint x="975" y="759.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="940" y="659" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-138" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="940" y="415.5" as="sourcePoint" />
+            <mxPoint x="975" y="575.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="940" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-139" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="940" y="415.5" as="sourcePoint" />
+            <mxPoint x="975" y="485.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="940" y="435" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-140" value="營養分析" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="970" y="821" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-141" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="940" y="695.5" as="sourcePoint" />
+            <mxPoint x="975" y="855.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="940" y="755" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-144" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="1218" y="415.5" as="sourcePoint" />
+            <mxPoint x="1238" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1218" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-145" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;strokeWidth=2;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="10">
+          <mxGeometry x="337" y="215.5" width="100" height="100" as="geometry">
+            <mxPoint x="850" y="265.5" as="sourcePoint" />
+            <mxPoint x="1223" y="335.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-146" value="Line推廣系統" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="1419.9999999999998" y="335.5" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-147" value="訂單分發" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="1528" y="440.00000000000006" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-148" value="外送指派" style="rounded=1;fillColor=#23445D;gradientColor=none;strokeColor=none;fontColor=#FFFFFF;fontStyle=1;fontFamily=Tahoma;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="1528" y="530" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-152" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1" source="IGmDrMcGWsqEOCEQU66a-147" target="IGmDrMcGWsqEOCEQU66a-148">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="-62" y="220" as="sourcePoint" />
+            <mxPoint x="38" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1508" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-156" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeWidth=2;rounded=0" edge="1" parent="1">
+          <mxGeometry x="-23" y="135.5" width="100" height="100" as="geometry">
+            <mxPoint x="1508" y="415.5" as="sourcePoint" />
+            <mxPoint x="1528" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1508" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGmDrMcGWsqEOCEQU66a-157" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;strokeWidth=2;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="IGmDrMcGWsqEOCEQU66a-146">
+          <mxGeometry x="337" y="215.5" width="100" height="100" as="geometry">
+            <mxPoint x="850" y="265.5" as="sourcePoint" />
+            <mxPoint x="1223" y="335.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- <title>Responsive Navbar with Searchbox</title> -->
+      <link rel="stylesheet" href="/static/css/sign_up_styles.css?{% now 'U' %}"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+
+
+   </head>
+   <body>
+      <nav style="background-color: #8ec6ff;"> <!-- Lighter blue background -->
+         <ul>
+            <li class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/dllogo2.png' %}"></a></li>
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="items">
+               <li><a href="{% url 'suggestion' %}">食譜推薦</a></li>
+               <li><a href="{% url 'buy_recipe' %}">食材購買</a></li>
+               <li><a href="{% url 'food_journal' %}">飲食日記</a></li>
+               <li class="dropdown">
+                  <a href="#">更多選項 <i class="fas fa-caret-down"></i></a>
+                  <div class="dropdown-content">
+                      <a href="#">訂單查詢</a>
+                      <a href="#">賣菜車</a>
+                  </div>
+              </li>
+            </div>
+            <li><a href="{% url 'login' %}" class="login-btn">登入</a></li> <!-- Login Button -->
+
+            <li class="search-icon">
+               <input type="search" placeholder="搜尋">
+               <label class="icon">
+               <span class="fas fa-search"></span>
+               </label>
+            </li>
+         </ul>
+      </nav>
+
+      <div class="container">
+        <h1>註冊</h1>
+        <form id="loginForm">
+            <label for="username">帳號:</label>
+            <input type="text" name="username" placeholder="請輸入您的電子郵件">
+            <label for="password">密碼:</label>
+            <input type="password" name="password" placeholder="請輸入您的密碼">
+            <div class="check">
+                <input type="checkbox" name="remember">
+                <label for="remember">記住我:</label>
+            </div>
+            <input type="submit" value="註冊">
+        </form>
+        <p class="login-link">
+         <a href="{% url 'login' %}">已有帳號? 登入</a>
+       </p>
+        
+        <script>
+            document.getElementById("loginForm").addEventListener("submit", function(event) {
+                // Prevent the default form submission behavior
+                event.preventDefault();
+                
+                // Redirect the user to another page
+                window.location.href = "{% url 'multistep_form' %}";
+            });
+        </script>
+        </form>
+
+      </div>
+
+
+      <script>
+         $('nav ul li.btn span').click(function(){
+           $('nav ul div.items').toggleClass("show");
+           $('nav ul li.btn span').toggleClass("show");
+         });
+
+         $(document).ready(function() {
+    // Hide the dropdown content initially
+    $('.dropdown-content').hide();
+    
+    // Toggle the dropdown content when the dropdown is clicked
+    $('.dropdown').click(function(){
+        $(this).find('.dropdown-content').toggle();
+    });
+});
+      </script>
+   </body>
+</html>

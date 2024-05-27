@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- <title>Responsive Navbar with Searchbox</title> -->
+      <link rel="stylesheet" href="/static/css/index_styles.css?{% now 'U' %}"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="stylesheet" href="{% static 'css/CalendarStyles.css' %}"> <!-- Include CalendarStyles.css for table and survey styling -->
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   </head>
+   <body>
+      <nav style="background-color: #8ec6ff;"> <!-- Lighter blue background -->
+         <ul>
+            <li class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/dllogo2.png' %}"></a></li>
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="items">
+               <li><a href="{% url 'suggestion' %}">食譜推薦</a></li>
+               <li><a href="{% url 'buy_recipe' %}">食材購買</a></li>
+               <li><a href="{% url 'food_journal' %}">飲食日記</a></li>
+               <li class="dropdown">
+                  <a href="#">更多選項 <i class="fas fa-caret-down"></i></a>
+                  <div class="dropdown-content">
+                      <a href="#">訂單查詢</a>
+                      <a href="#">賣菜車</a>
+                  </div>
+              </li>
+            </div>
+            <li><a href="{% url 'login' %}" class="login-btn">登入</a></li> <!-- Login Button -->
+         </ul>
+         <div class="search-icon">
+            <input type="search" placeholder="搜尋">
+            <label class="icon">
+            <span class="fas fa-search"></span>
+            </label>
+         </div>
+      </nav>
+
+      <!-- Search bar -->
+      <div class="search-bar">
+         <input type="text" placeholder="輸入搜索關鍵字...">
+         <button>搜索</button>
+      </div>
+  
+      <!-- 直接購買 section -->
+    <form method="POST" action="{% url 'buy_recipe' %}">
+      {% csrf_token %}
+      <!-- 直接購買 section -->
+      <div class="content-container">
+         <div class="survey" id="purchase-survey">
+            <h2>直接購買</h2>
+            <div>
+               <label for="servings">幾人份？</label>
+               <select id="servings" name="servings" required>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+               </select>
+            </div>
+            <div>
+               <label for="meal">早/中/晚餐：</label>
+               <select id="meal" name="meal" required>
+                  <option value="breakfast">早餐</option>
+                  <option value="lunch">午餐</option>
+                  <option value="dinner">晚餐</option>
+               </select>
+            </div>
+            <div>
+               <label for="cuisine">挑選一種菜式風格：</label>
+               <select id="cuisine" name="cuisine">
+                  <option value="chinese">中式</option>
+                  <option value="western">西式</option>
+                  <option value="japanese">日式</option>
+                  <option value="indian">印度式</option>
+                  <option value="southeast-asian">東南亞式</option>
+                  <option value="european">歐式</option>
+                  <option value="korean">韓式</option>
+               </select>
+            </div>
+            <div>
+               <label for="ingredients">想吃的食材（菜、肉）：</label>
+               <select id="ingredients" name="ingredients" required>
+                  <option value="芹菜">芹菜</option>
+                  <option value="高麗菜">高麗菜</option>
+                  <option value="花椰菜">花椰菜</option>
+                  <option value="水蓮">水蓮</option>
+                  <option value="豬肉">豬肉</option>
+                  <option value="牛肉">牛肉</option>
+                  <option value="雞肉">雞肉</option>
+                  <option value="羊肉">羊肉</option>
+                  <option value="魚肉">魚肉</option>
+                  <option value="other">其他</option>
+               </select>
+               <input type="text" id="other-ingredients" name="other-ingredients" placeholder="其他食材">
+            </div>
+            <div>
+               <label for="dietary-needs">飲食需求：</label>
+               <select id="dietary-needs" name="dietary-needs" required>
+                  <option value="low-oil">少油</option>
+                  <option value="low-salt">少鹽</option>
+                  <option value="vegetarian">素食</option>
+                  <option value="ovo-lacto-vegetarian">蛋奶素</option>
+                  <option value="high-protein">高蛋白</option>
+                  <option value="non-spicy">不辣</option>
+               </select>
+            </div>
+            <div>
+               <label for="harvest-date">收貨日期：</label>
+               <input type="date" id="harvest-date" name="harvest-date" required>
+            </div>
+            <button onclick="recommend()">推薦</button>
+         </div>
+         <div class="recommended-dishes">
+            <h2>推薦食譜</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>食譜名稱</th>
+                        <th>食材</th>
+                        <th>食譜連結</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Placeholder content -->
+                    <tr><td colspan="3">No recommended dishes yet</td></tr>
+                    <!-- Empty rows for future dishes -->
+                    {% for i in recommended_dish_range %}
+                    <tr><td></td><td></td><td></td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        
+      </div>
+      
+      <!-- Calendar and Survey Section -->
+      <div class="calendar-container">
+         <table class="calendar">
+            <thead>
+               <tr>
+                  <th></th>
+                  <th>M</th>
+                  <th>T</th>
+                  <th>W</th>
+                  <th>T</th>
+                  <th>F</th>
+                  <th>S</th>
+                  <th>S</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <th>早餐</th>
+                  <td class="breakfast"></td>
+                  <td class="breakfast"></td>
+                  <td class="breakfast"></td>
+                  <td class="breakfast"></td>
+                  <td class="breakfast"></td>
+                  <td class="breakfast"></td>
+               </tr>
+               <tr>
+                  <th>午餐</th>
+                  <td class="lunch"></td>
+                  <td class="lunch"></td>
+                  <td class="lunch"></td>
+                  <td class="lunch"></td>
+                  <td class="lunch"></td>
+                  <td class="lunch"></td>
+                  <td class="lunch"></td>
+               </tr>
+               <tr>
+                  <th>晚餐</th>
+                  <td class="dinner"></td>
+                  <td class="dinner"></td>
+                  <td class="dinner"></td>
+                  <td class="dinner"></td>
+                  <td class="dinner"></td>
+                  <td class="dinner"></td>
+                  <td class="dinner"></td>
+               </tr>
+            </tbody>
+         </table>
+         <div class="survey">
+            <h2>選擇行配餐</h2>
+            <div>
+               <label for="times-per-week">一週幾餐？</label>
+               <select id="times-per-week">
+                  <option value="1">1</option>
+                  <option value="3">3</option>
+                  <option value="5">5</option>
+               </select>
+            </div>
+            <div>
+               <label for="recipe-tag">挑選一種菜式風格：</label>
+               <select id="recipe-tag">
+                  <option value="chinese">中式</option>
+                  <option value="korean">韓式</option>
+                  <option value="american">美式</option>
+                  <option value="vietnamese">越式</option>
+                  <option value="japanese">日式</option>
+               </select>
+            </div>
+            <button onclick="applySurvey()">Apply</button>
+         </div>
+         <div id="popup" class="popup hidden">
+            <div id="popup-content"></div>
+         </div>
+      </div>
+      <script src="{% static 'js/CalendarScript.js' %}"></script> <!-- Include CalendarScript.js for survey functionality -->
+      <script>
+         $('nav ul li.btn span').click(function(){
+           $('nav ul div.items').toggleClass("show");
+           $('nav ul li.btn span').toggleClass("show");
+         });
+
+         $(document).ready(function() {
+    // Hide the dropdown content initially
+    $('.dropdown-content').hide();
+    
+    // Toggle the dropdown content when the dropdown is clicked
+    $('.dropdown').click(function(){
+        $(this).find('.dropdown-content').toggle();
+    });
+});
+      </script>
+   </body>
+</html>

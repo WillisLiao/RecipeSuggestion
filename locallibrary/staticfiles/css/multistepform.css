@@ -1,0 +1,29 @@
+/* CSS for Multi-Step Form */
+.question {
+    display: none;
+  }
+  
+  .current-question {
+    display: block;
+  }
+  
+  /* Style for buttons */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style for input fields */
+  input[type="text"],
+  input[type="radio"] {
+    margin-bottom: 10px;
+  }
+  
